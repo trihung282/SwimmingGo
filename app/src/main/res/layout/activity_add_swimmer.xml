@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".coach.team_manage.AddSwimmerActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:padding="5sp"
+        android:background="@color/colorBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:id="@+id/txt_team_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>
+            <Button
+                android:layout_marginLeft="10sp"
+                android:id="@+id/btn_edit_team_name"
+                android:layout_width="32sp"
+                android:layout_height="32sp"
+                android:background="@mipmap/edit"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/txt_team_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:paddingTop="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RadioGroup
+            android:id="@+id/rdg_add_swimmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <RadioButton
+                android:text="Thêm mới VDV"
+                android:id="@+id/rdb_add_new_swimmer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="Thêm VDV có sẵn"
+                android:id="@+id/rdb_add_available_swimmer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+        <FrameLayout
+            android:layout_margin="10sp"
+            android:id="@+id/frame_add_swimmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

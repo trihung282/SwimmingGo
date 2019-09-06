@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    tools:context=".coach.setting_manage.ChartViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="12"
+                android:gravity="center"
+                android:text="Xem thống kê"
+                android:textColor="@color/colorBlue"
+                android:textSize="48sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_swimmer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:ems="11"
+            android:gravity="center"
+            android:textColor="@color/colorBlue"
+            android:textSize="26sp" />
+
+        <RadioGroup
+            android:id="@+id/rdg_statis"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="20sp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RadioButton
+                android:id="@+id/rdb_week"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rb_button_background"
+                android:text="Theo tuần"
+                android:textAlignment="center"
+                android:button="@android:color/transparent"/>
+            <RadioButton
+                android:id="@+id/rdb_month"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rb_button_background"
+                android:text="Theo tháng"
+                android:textAlignment="center"
+                android:button="@android:color/transparent"/>
+            <RadioButton
+                android:id="@+id/rdb_quarter"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rb_button_background"
+                android:text="Theo quý"
+                android:textAlignment="center"
+                android:button="@android:color/transparent"/>
+
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/layout_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

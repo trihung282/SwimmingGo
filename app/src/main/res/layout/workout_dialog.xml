@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@drawable/background_dialog"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10sp"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="8">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Khởi động"
+            android:textColor="@color/colorBlue"
+            android:textSize="38sp"
+            android:layout_marginBottom="10sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:background="@drawable/background_item_recyclerview"
+            android:orientation="vertical"
+            android:weightSum="13">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="10sp"
+                        android:text="Lần tập"
+                        android:textAlignment="textStart"
+                        android:textSize="20sp"
+                        tools:ignore="RtlCompat" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_reps_minus"
+                        android:layout_width="32sp"
+                        android:layout_height="32sp"
+                        android:background="@drawable/background_btnstep"
+                        android:text="-"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edt_rep"
+                        android:layout_width="32sp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="5" />
+
+                    <Button
+                        android:id="@+id/btn_reps_plus"
+                        android:layout_width="32sp"
+                        android:layout_height="32sp"
+                        android:background="@drawable/background_btnstep"
+                        android:text="+" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="10sp"
+                        android:text="Khoảng cách"
+                        android:textAlignment="textStart"
+                        android:textSize="20sp"
+                        tools:ignore="RtlCompat" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_distance_minus"
+                        android:layout_width="32sp"
+                        android:layout_height="32sp"
+                        android:background="@drawable/background_btnstep"
+                        android:text="-"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txt_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="2"
+                        android:gravity="center"
+                        android:text="2000"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/btn_distance_plus"
+                        android:layout_width="32sp"
+                        android:layout_height="32sp"
+                        android:background="@drawable/background_btnstep"
+                        android:text="+" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:paddingLeft="10sp"
+                    android:text="Kiểu bơi"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    tools:ignore="RtlCompat" />
+
+                <Spinner
+                    android:id="@+id/spn_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></Spinner>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <EditText
+                    android:id="@+id/edt_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"
+                    android:layout_margin="10sp"
+                    android:gravity="top"
+                    android:hint="Mô tả"
+                    android:paddingLeft="10sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_margin="5sp"
+                android:id="@+id/btn_cancel"
+                android:text="Hủy"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                android:background="@drawable/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_margin="5sp"
+                android:id="@+id/btn_add"
+                android:text="Tạo"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                android:background="@drawable/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

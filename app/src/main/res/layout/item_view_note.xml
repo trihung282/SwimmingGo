@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:padding="10sp"
+    android:layout_margin="10sp">
+
+    <TextView
+        android:id="@+id/txt_swimmer_name"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:text="Tên"
+        android:textSize="26sp" />
+    <TextView
+        android:id="@+id/txt_rank"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:padding="10sp"
+        android:text="Note"
+        android:id="@+id/txt_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|left"
+        android:textSize="16sp"
+        android:lines="2"
+        android:maxLines="4"
+        android:background="@drawable/border_record"/>
+</LinearLayout>

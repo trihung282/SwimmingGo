@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_item_recyclerview"
+    android:orientation="vertical"
+    android:layout_margin="10sp"
+    android:padding="10sp">
+    <TextView
+        android:id="@+id/txt_team_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="11"
+        android:textSize="28sp"/>
+    <TextView
+        android:id="@+id/txt_team_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="11"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="32sp"
+            android:layout_height="32sp"
+            android:background="@mipmap/edit"/>
+        <Button
+            android:id="@+id/btn_delete"
+            android:background="@mipmap/trash"
+            android:layout_width="32sp"
+            android:layout_height="32sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_workout"
+        android:icon="@drawable/icon_workout"
+        android:title="Bài tập"
+        />
+    <item
+        android:id="@+id/item_team"
+        android:icon="@drawable/icon_team"
+        android:title="Nhóm"
+        />
+    <item
+        android:id="@+id/item_library"
+        android:icon="@drawable/icon_library"
+        android:title="Thư viện"
+        />
+    <item
+        android:id="@+id/item_diary"
+        android:icon="@drawable/icon_diary"
+        android:title="Nhật ký"
+        />
+    <item
+        android:id="@+id/item_setting"
+        android:icon="@drawable/icon_setting"
+        android:title="Cài đặt"
+        />
+</menu>

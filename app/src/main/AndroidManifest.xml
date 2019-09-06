@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.swimtracker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".coach.setting_manage.ChartViewActivity"></activity>
+        <activity android:name=".coach.setting_manage.StatisActivity" />
+        <activity android:name=".coach.diary_manage.AddNoteActivity" />
+        <activity android:name=".coach.workout_manage.ViewWorkoutActivity" />
+        <activity android:name=".coach.workout_manage.EditWorkoutActivity" />
+        <activity android:name=".coach.workout_manage.AddWorkoutActivity" />
+        <activity android:name=".coach.workout_manage.CreateRecordActivity" />
+        <activity android:name=".coach.library_manage.PlayVideo" />
+        <activity android:name=".coach.library_manage.BackStyleVideo" />
+        <activity android:name=".coach.library_manage.BreastStyleVideo" />
+        <activity android:name=".coach.library_manage.ButterflyStyleVideo" />
+        <activity android:name=".coach.library_manage.FreeStyleVideo" />
+        <activity android:name=".swimmer.MainActivity" />
+        <activity android:name=".coach.team_manage.AddSwimmerActivity" />
+        <activity android:name=".coach.team_manage.ListSwimmerActivity" />
+        <activity android:name=".coach.MainActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".CoachViewInfo" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".ForgotPasswordActivity2" />
+        <activity android:name=".ForgotPasswordActivity3" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".UpdateCoachActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20sp"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".coach.workout_manage.SubWorkoutFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="7"
+                android:layout_marginRight="20sp"
+                android:layout_marginBottom="10sp">
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30sp"
+                    android:background="@drawable/border"
+                    android:ems="8"
+                    android:gravity="center"
+                    android:hint="Chọn ngày tập"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="10sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10sp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chọn đội"
+                    android:textSize="20sp" />
+                <Spinner
+                    android:id="@+id/spn_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </Spinner>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="7">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên bài tập"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <EditText
+                android:id="@+id/edt_workout_name"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:background="@drawable/border"
+                android:ems="11"
+                android:inputType="textMultiLine"
+                android:paddingLeft="10sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Bài tập phụ"
+                android:textSize="28sp"
+                android:textColor="@color/colorBlue"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="10"
+            android:layout_weight="6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/background_item_recyclerview"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="150sp"
+                    android:text="Lần tập"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_reps_minus"
+                    android:layout_width="32sp"
+                    android:layout_height="32sp"
+                    android:background="@drawable/background_btnstep"
+                    android:text="-"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edt_rep"
+                    android:layout_width="32sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="5" />
+
+                <Button
+                    android:id="@+id/btn_reps_plus"
+                    android:layout_width="32sp"
+                    android:layout_height="32sp"
+                    android:background="@drawable/background_btnstep"
+                    android:text="+" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="70sp"
+                    android:text="Khoảng cách"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_distance_minus"
+                    android:layout_width="32sp"
+                    android:layout_height="32sp"
+                    android:background="@drawable/background_btnstep"
+                    android:text="-"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt_distance"
+                    android:layout_width="62sp"
+                    android:layout_height="32sp"
+                    android:gravity="center"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_distance_plus"
+                    android:layout_width="32sp"
+                    android:layout_height="32sp"
+                    android:background="@drawable/background_btnstep"
+                    android:text="+" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40sp"
+                    android:ems="5"
+                    android:text="Kiểu bơi"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spn_style"
+                    android:layout_width="150sp"
+                    android:layout_height="30sp"></Spinner>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+
+                <EditText
+                    android:id="@+id/edt_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"
+                    android:gravity="top"
+                    android:hint="Mô tả"
+                    android:paddingLeft="10sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50sp"
+                android:background="@drawable/background_button"
+                android:text="Hủy"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:text="Tiếp theo"
+                android:layout_marginRight="50sp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:text="Tiếp theo"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30sp"
+    android:orientation="vertical"
+    tools:context=".coach.team_manage.AddNewSwimmerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_reps_minus"
+                android:layout_width="32sp"
+                android:layout_height="32sp"
+                android:background="@drawable/background_btnstep"
+                android:text="-"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edt_rep"
+                android:layout_width="32sp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/btn_reps_plus"
+                android:layout_width="32sp"
+                android:layout_height="32sp"
+                android:background="@drawable/background_btnstep"
+                android:text="+" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="25sp">
+            <Button
+                android:id="@+id/btn_add_new_swimmer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:text="Tạo"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_add_new_swimmer"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="7">
+        <ListView
+            android:id="@+id/lv_swimmer"
+            android:layout_weight="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="2px">
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_finish"
+                android:background="@drawable/background_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:text="Xong"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

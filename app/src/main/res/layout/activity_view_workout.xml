@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".coach.workout_manage.ViewWorkoutActivity"
+    android:weightSum="13"
+    android:orientation="vertical"
+    android:paddingLeft="10sp"
+    android:paddingRight="10sp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="2"
+        android:text="Xem bài tập"
+        android:gravity="center"
+        android:ems="11"
+        android:textSize="48sp"
+        android:textColor="@color/colorBlue" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/txt_workout_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Nhập tên bài tập"
+                android:ems="12"
+                android:textSize="24sp"
+                android:background="@drawable/border"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="5">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="9"
+                    android:textColor="@color/colorBlack"
+                    android:hint="Nhập ngày"
+                    android:textSize="18sp"
+                    android:background="@drawable/border"
+                    android:paddingLeft="10sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:paddingLeft="5sp"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="4"
+                    android:text="Tên nhóm"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/txt_team_name"
+                    android:text="Ten nhom"
+                    android:textSize="16sp"
+                    android:ems="6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_start"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:background="@drawable/background_item_recyclerview"
+        android:paddingLeft="10sp"
+        android:layout_marginBottom="10sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:textSize="24sp"
+            android:text="Khởi động"
+            android:textColor="@color/colorBlue"/>
+        <TextView
+            android:id="@+id/txt_repetition_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lần tập : "
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/txt_distance_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khoảng cách : "
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/txt_style_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kiểu bơi : "
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:background="@drawable/background_item_recyclerview"
+        android:paddingLeft="10sp"
+        android:layout_marginBottom="10sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:textSize="24sp"
+            android:text="Bài tập chính"
+            android:textColor="@color/colorBlue"/>
+        <TextView
+            android:id="@+id/txt_repetition_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lần tập : "
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/txt_distance_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khoảng cách : "
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/txt_style_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kiểu bơi : "
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_sub"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:background="@drawable/background_item_recyclerview"
+        android:paddingLeft="10sp"
+        android:layout_marginBottom="10sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:textSize="24sp"
+            android:text="Bài tập phụ"
+            android:textColor="@color/colorBlue"/>
+        <TextView
+            android:id="@+id/txt_repetition_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lần tập : "
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/txt_distance_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khoảng cách : "
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/txt_style_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kiểu bơi : "
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_relax"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:background="@drawable/background_item_recyclerview"
+        android:paddingLeft="10sp"
+        android:layout_marginBottom="5sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:textSize="24sp"
+            android:text="Thả lỏng"
+            android:textColor="@color/colorBlue"/>
+        <TextView
+            android:id="@+id/txt_repetition_relax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lần tập : "
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/txt_distance_relax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khoảng cách : "
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/txt_style_relax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kiểu bơi : "
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:text="Quay lại"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:text="Tạo"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/btn_create_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

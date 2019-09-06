@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginBottom="10sp"
+    android:background="@drawable/background_item_recyclerview"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:orientation="horizontal"
+        android:layout_weight="10"
+        android:weightSum="12"
+        android:padding="5sp">
+        <TextView
+            android:text="Ten"
+            android:id="@+id/txt_swimmer_name"
+            android:layout_width="0sp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"
+            android:ems="11"
+            android:paddingLeft="5sp"
+            android:textSize="16sp"/>
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <EditText
+                android:textAlignment="center"
+                android:id="@+id/edt_minute"
+                android:layout_width="30sp"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:background="@drawable/border_record"
+                android:ems="1"
+                android:inputType="number"
+                android:layout_marginLeft="10sp"/>
+            <EditText
+                android:textAlignment="center"
+                android:id="@+id/edt_sec"
+                android:layout_width="30sp"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:background="@drawable/border_record"
+                android:ems="1"
+                android:inputType="number"
+                android:layout_marginLeft="10sp"/>
+            <EditText
+                android:textAlignment="center"
+                android:layout_marginLeft="10sp"
+                android:id="@+id/edt_millisec"
+                android:layout_width="30sp"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:background="@drawable/border_record"
+                android:ems="1"
+                android:inputType="number"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

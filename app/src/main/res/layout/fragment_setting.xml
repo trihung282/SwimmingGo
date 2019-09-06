@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".coach.setting_manage.SettingFragment">
+
+    <LinearLayout
+        android:id="@+id/upper_part"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorBlue"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="94dp"
+            android:layout_height="99dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="295dp"
+            android:layout_height="45dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"
+            android:gravity="center|left"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:text="Huấn Luyện Viên"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:id="@+id/img_gender"
+                android:layout_width="29dp"
+                android:layout_height="31dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="31dp"
+                android:src="@drawable/icon_logout"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/btn_statis"
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textAllCaps="false"
+                android:text="Thống kê"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="31dp"
+                android:src="@drawable/icon_info"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/btn_show_info"
+                android:ems="10"
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thông tin"
+                android:textAllCaps="false"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="31dp"
+                android:src="@drawable/icon_change_password"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/btn_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:background="@drawable/border"
+                android:text="Đổi mật khẩu"
+                android:textAllCaps="false"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="31dp"
+                android:src="@drawable/icon_logout"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textAllCaps="false"
+                android:text="Đăng xuất"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
